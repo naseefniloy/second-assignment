@@ -271,98 +271,98 @@
         }
         
         .container1 {
-      display: flex;
-      gap: 30px;
-      max-width: 1140px;
-      padding: 0 0 0 50px;
-    }
+            display: flex;
+            gap: 30px;
+            max-width: 1140px;
+            padding: 0 0 0 50px;
+        }
 
-    .left {
-      display: flex;
-      flex-direction: column;
-      gap: 25px;
-    }
+        .left {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
 
-    .card {
-      position: relative;
-      border-radius: 15px;
-      overflow: hidden;
-      width: 350px;
-      height: 200px;
-      background-size: cover;
-      background-position: center;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      transition: transform 0.3s ease;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
+        .card {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            width: 350px;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
 
-    .card:hover {
-      transform: scale(1.05);
-    }
+        .card:hover {
+            transform: scale(1.05);
+        }
+ 
+        .right {
+            width: 750px;
+            height: 420px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 20px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
 
-    .right {
-      width: 750px;
-      height: 420px;
-      background-size: cover;
-      background-position: center;
-      border-radius: 20px;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      transition: transform 0.3s ease;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
+        .right:hover {
+            transform: scale(1.05);
+        }
 
-    .right:hover {
-      transform: scale(1.05);
-    }
+        .text {
+            padding: 15px 25px;
+            border-radius: 10px;
+        }
 
-    .text {
-      padding: 15px 25px;
-      border-radius: 10px;
-    }
+        .text h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-family: Noto Serif;
+        }
 
-    .text h2 {
-      font-size: 24px;
-      margin-bottom: 10px;
-      font-family: Noto Serif;
-    }
+        .text a {
+            color: white;
+            text-decoration: underline;
+            font-weight: bold;
+        }
 
-    .text a {
-      color: white;
-      text-decoration: underline;
-      font-weight: bold;
-    }
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
 
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      border: 0;
-    }
+        .bloom {
+            background-image: url('../assets/deal-bloom.png');
+        }
 
-    .bloom {
-      background-image: url('../assets/deal-bloom.png');
-    }
+        .ana {
+            background-image: url('../assets/deal-ana.png');
+        }
 
-    .ana {
-      background-image: url('../assets/deal-ana.png');
-    }
-
-    .zabo {
-      background-image: url('../assets/deal-zabo.png');
-    }
+        .zabo {
+            background-image: url('../assets/deal-zabo.png');
+        }
         
         /* Footer */
         .footer {
