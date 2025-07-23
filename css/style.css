@@ -212,7 +212,7 @@
         
         /* Join Section */
         .join-section {
-            background-image: url('https://images.unsplash.com/photo-1526397751294-331021109fbd');
+            background-image: url('../assets/news-letter-bg.png');
             background-size: cover;
             background-position: center;
             color: white;
@@ -447,8 +447,18 @@
             }
             
             /* Latest Deals */
-            .deals-grid {
-                grid-template-columns: 1fr;
+            .container1 {
+                flex-direction: column;
+                align-items: center;
+                padding: 0 0 0 5px;
+            }
+           .left, .right {
+                width: 100%;
+                max-width: 350px;
+            }
+           .right {
+                width: 750px;
+                height: 300px;
             }
             
             /* Footer */
