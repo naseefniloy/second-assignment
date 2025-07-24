@@ -187,40 +187,41 @@
         }
         
         /* Plants Lover Section */
-        .plants-lover {
-            display: flex;
-            align-items: center;
-            padding: 60px 0;
+        .parent-3 {
+        margin-top: 210.13px;
+        display: flex;
+        position: relative;
         }
-        
-        .plants-lover-image {
-            flex: 1;
+        .parent-3-left {
+        flex: 1;
         }
-        
-        .plants-lover-content {
-            flex: 1;
-            padding-left: 40px;
+        .parent-3-right {
+        padding: 38px 0px 38px 70px;
         }
-        
-        .plants-lover h2 {
-            font-size: 40px;
-            margin-bottom: 20px;
-            font-family: Noto Serif;
-            font-weight: bold;
+        .popup-img {
+        max-width: 286px;
+        height: auto;
+        position: absolute;
+        background-color: transparent;
+        top: -135px;
+        left: 350px;
         }
-        
-        .plants-lover-list li {
-            margin-bottom: 15px;
-            position: relative;
-            padding-left: 25px;
-            color: rgba(0, 0, 0, 0.5);
+
+        .parent-3-right h2 {
+        font-size: 40px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 1);
+        margin-bottom: 20px;
+        font-family: Noto Serif;
+        padding-left: 30px;
         }
-        
-        .plants-lover-list li:before {
-            content: "✓";
-            color: #4CAF50;
-            position: absolute;
-            left: 0;
+        .parent-3-right li {
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.5);
+        margin-bottom: 20px;
+        }
+        .list-item {
+        padding-left: 35px;
         }
         
         /* Join Section */
