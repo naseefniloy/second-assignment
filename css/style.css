@@ -68,6 +68,11 @@
             gap: 30px;
         }
         
+        .cart-icon img{
+            width: 20px;
+            vertical-align: middle;
+        }
+
         .nav-links li {
             font-size: 16px;
             color: rgba(137, 135, 161, 1);
@@ -413,6 +418,10 @@
             /* Navbar */
             .nav-links {
                 display: none;
+            }
+
+            .mobile-cart img{
+                width: 20px;
             }
             
             .mobile-cart {
