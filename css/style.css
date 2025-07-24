@@ -129,61 +129,75 @@
         }
         
         /* Plants Section */
-        .plants-section {
-            padding: 60px 0;
-            text-align: center;
+        .parent-2 {
+        margin-top: 120px;
         }
-        
-        .section-title {
-            font-size: 40px;
-            margin-bottom: 10px;
-            font-family: Noto Serif;
-            font-weight: bold;
+
+        .child-1 {
+        text-align: center;
         }
-        
-        .section-subtitle {
-            font-size: 16px;
-            color: rgba(0, 0, 0, 0.5);
-            margin-bottom: 40px;
+
+        .child-1 h1 {
+        font-size: 40px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 1);
+        font-family: Noto Serif;
         }
-        
-        .plants-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
+
+        .child-1 p {
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.5);
+        margin-top: 16px;
         }
-        
-        .plant-card {
-            border: 1px solid #eee;
-            border-radius: 8px;
-            padding: 20px;
-            text-align: center;
-            transition: transform 0.3s;
+
+        .cards img {
+        width: 100%;
         }
-        
-        .plant-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+        .cards p,
+        h3 {
+        text-align: center;
         }
-        
-        .plant-card img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 4px;
-            margin-bottom: 15px;
+
+        .cards p {
+        font-size: 22px;
+        font-weight: 500;
+        color: rgba(17, 17, 17, 1);
+        margin-top: 30px;
+        margin-bottom: 0%;
         }
-        
-        .plant-name {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 10px;
+
+        .cards h3 {
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: 10px;
         }
-        
-        .plant-price {
-            color: #4CAF50;
-            font-weight: bold;
-            margin-bottom: 15px;
+
+        .cards button {
+        width: 100%;
+        height: 50px;
+        background-color: rgba(233, 90, 8, 1);
+        border: none;
+        color: rgba(255, 255, 255, 1);
+        font-weight: 500;
+        margin-top: 30px;
+        }
+
+        .cards {
+        margin-top: 49px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        }
+
+        .cards div {
+        transition: transform 0.7s;
+        cursor: pointer;
+        }
+
+        .cards div:hover {
+        transform: translateY(-13px);
+        box-shadow: 0px 0px 30px rgb(206, 204, 204);
         }
         
         /* Plants Lover Section */
@@ -192,12 +206,15 @@
         display: flex;
         position: relative;
         }
+
         .parent-3-left {
         flex: 1;
         }
+
         .parent-3-right {
         padding: 38px 0px 38px 70px;
         }
+
         .popup-img {
         max-width: 286px;
         height: auto;
@@ -215,11 +232,13 @@
         font-family: Noto Serif;
         padding-left: 30px;
         }
+
         .parent-3-right li {
         font-size: 20px;
         color: rgba(0, 0, 0, 0.5);
         margin-bottom: 20px;
         }
+
         .list-item {
         padding-left: 35px;
         }
@@ -416,7 +435,7 @@
 
         /* Mobile Responsive Styles */
 @media (max-width: 768px) {
-    /* Navbar */
+    /* 1. Navbar */
     .navbar {
         padding: 15px 0;
     }
@@ -433,41 +452,67 @@
     .mobile-cart img {
         width: 20px;
         margin-right: 5px;
+        vertical-align: middle;
     }
     
-    /* Banner */
+    /* 2. Banner */
     .banner {
-        flex-direction: column-reverse;
+        flex-direction: column;
         padding: 30px 0;
     }
     
     .banner-content {
         padding-right: 0;
         text-align: left;
+        order: 2;
+        margin-top: 20px;
     }
     
     .banner h1 {
         font-size: 32px;
+        line-height: 1.2;
     }
     
     .banner p {
-        font-size: 14px;
+        font-size: 16px;
+        line-height: 1.5;
     }
     
-    /* Plants Section */
-    .plants-grid {
+    .banner br {
+        display: none;
+    }
+    
+    /* 3. Plants Section */
+    .parent-2 {
+        margin-top: 60px;
+    }
+    
+    .child-1 h1 {
+        font-size: 28px;
+    }
+    
+    .child-1 p {
+        font-size: 16px;
+    }
+    
+    .cards {
         grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-top: 30px;
     }
     
-    .plant-card {
-        padding: 15px;
+    .cards p, 
+    .cards h3 {
+        font-size: 18px;
     }
     
-    .plant-card img {
-        height: 120px;
+    .cards button {
+        height: 40px;
+        font-size: 14px;
+        margin-top: 15px;
     }
     
-    /* Plants Lover Section */
+    /* 4. Plants Lover Section */
     .parent-3 {
         flex-direction: column;
         margin-top: 60px;
@@ -488,16 +533,22 @@
     
     .parent-3-right li {
         font-size: 16px;
+        line-height: 1.5;
     }
     
     .list-item {
         padding-left: 20px;
     }
     
-    /* Latest Deals Section */
+    .parent-3-right br {
+        display: none;
+    }
+    
+    /* 5. Latest Deals Section */
     .container1 {
         flex-direction: column;
         padding: 0;
+        gap: 20px;
     }
     
     .left {
@@ -514,7 +565,11 @@
         height: 200px;
     }
     
-    /* Join Section */
+    .text h2 {
+        font-size: 20px;
+    }
+    
+    /* 6. Join Section */
     .join-section {
         padding: 40px 20px;
     }
@@ -536,7 +591,7 @@
         border-radius: 4px;
     }
     
-    /* Footer */
+    /* 7. Footer */
     .footer-content {
         flex-direction: column;
     }
@@ -544,36 +599,16 @@
     .footer-links {
         flex-direction: column;
         gap: 10px;
+        margin-top: 15px;
+    }
+    
+    .media-logo {
+        margin-top: 10px;
     }
     
     .media-logo a img {
         width: 30px;
     }
 }
-/* Additional adjustments for very small screens */
-@media (max-width: 480px) {
-    .banner h1 {
-        font-size: 28px;
-    }
-    
-    .section-title {
-        font-size: 28px;
-    }
-    
-    .plant-card {
-        padding: 10px;
-    }
-    
-    .plant-name {
-        font-size: 16px;
-    }
-    
-    .plant-price {
-        font-size: 14px;
-    }
-    
-    .btn {
-        padding: 8px 15px;
-        font-size: 14px;
-    }
-}
+
+
