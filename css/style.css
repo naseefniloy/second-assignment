@@ -70,6 +70,14 @@
         
         .nav-links li {
             font-size: 16px;
+            color: rgba(137, 135, 161, 1);
+            padding-right: 30px;
+        }
+
+        .nav-links li :hover{
+            color: rgba(37, 36, 50, 1);
+            font-weight: bold;
+            transition-delay: 0.7ms;
         }
         
         .cart-icon {
@@ -387,6 +395,11 @@
         
         .footer-links ul li {
             margin-bottom: 25px;
+            color: grey;
+        }
+
+        .footer-links ul li a:hover{
+            color: rgba(37, 36, 50, 1);
         }
         
         .media-logo a img{
